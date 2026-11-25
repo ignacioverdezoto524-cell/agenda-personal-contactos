@@ -26,9 +26,19 @@ Cada usuario puede gestionar únicamente sus propios contactos, evitando que otr
 - Consultar la lista de contactos.
 - Editar información de contactos.
 - Eliminar contactos.
-- Protección de información mediante consultas preparadas.
-- Validación de acceso para que cada usuario gestione únicamente sus propios contactos.
+- Protección mediante consultas preparadas.
+- Control de acceso para que cada usuario gestione únicamente sus propios contactos.
 - Protección de formularios mediante token CSRF.
+
+## Mejoras implementadas
+
+### 1. Búsqueda de contactos
+
+Permite localizar contactos mediante su nombre, correo electrónico o ciudad.
+
+### 2. Ordenamiento de contactos
+
+Permite organizar los contactos por nombre y ciudad, tanto de forma ascendente (A-Z) como descendente (Z-A). También permite visualizar los contactos más recientes.
 
 ## Estructura de la base de datos
 
@@ -70,7 +80,7 @@ La tabla contactos se relaciona con usuarios mediante el campo `id_usuario`.
 
 La aplicación implementa mecanismos de seguridad como:
 
-- Contraseñas cifradas mediante funciones de hash.
+- Contraseñas protegidas mediante funciones de hash.
 - Consultas preparadas para interactuar con la base de datos.
 - Control de acceso mediante sesiones.
 - Validación de propiedad de los contactos.
@@ -78,4 +88,4 @@ La aplicación implementa mecanismos de seguridad como:
 
 ## Autor
 
-Proyecto académico desarrollado como práctica de programación web utilizando PHP y MySQL.
+RUBEN VERDEZOTO.
